@@ -17,8 +17,8 @@ import argparse
 
 
 parser = argparse.ArgumentParser()
-parser.add_argument("--sigma", default=1, type=int, help="sigma of gaussian noise")
-parser.add_argument("--size", default=3, type=int, help="kernel size of gaussian blurring")
+parser.add_argument("--sigma", default=0, type=int, help="sigma of gaussian noise")
+parser.add_argument("--size", default=0, type=int, help="kernel size of gaussian blurring")
 args = parser.parse_args()
 
 torch.multiprocessing.set_sharing_strategy('file_system')
