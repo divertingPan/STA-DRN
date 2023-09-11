@@ -156,7 +156,7 @@ class AttentionSpatiotemporalBlock(nn.Module):
                                                         1, x_s.size(3), x_s.size(4))
         attention_s = self.softmax(attention_s)
 
-        x = attention_s * attention_s
+        x = attention_s * attention_t
         x = x.view(x.size(0), x.size(2) * self.k, x.size(3), x.size(4), x.size(5))
         x = x * (x_s + x_t)
 
