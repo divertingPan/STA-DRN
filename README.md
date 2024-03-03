@@ -3,6 +3,9 @@ Code for the paper 'Spatial-Temporal Attention Network for Depression Recognitio
 
 ![main figure](https://ars.els-cdn.com/content/image/1-s2.0-S0957417423019127-gr2.jpg)
 
+## Pre-process
+[face_detect.py](https://github.com/divertingPan/utility_room/blob/master/face_detect.py): Crop faces from a series of video frame images. The images should be frames already exported from the video. To run the program directly, the path format for storing images should be `dataset_path/video_001/00001.jpg、dataset_path/video_001/00002.jpg`, and another model file [shape_predictor_68_face_landmarks.dat](https://github.com/divertingPan/utility_room/blob/master/shape_predictor_68_face_landmarks.dat) is also required.
+
 ## How to Run
 You can directly execute the `train.py` or `test.py` scripts with your own dataset.
 
