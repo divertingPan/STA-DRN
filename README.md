@@ -8,7 +8,7 @@ Code for the paper 'Spatial-Temporal Attention Network for Depression Recognitio
 
 ## Pre-process
 
-**(Recommend) Using [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace) to crop the facial frames. **
+**(Recommend) Using [OpenFace](https://github.com/TadasBaltrusaitis/OpenFace) to crop the facial frames.**
 
 [face_detect.py](https://github.com/divertingPan/utility_room/blob/master/face_detect.py): Crop faces from a series of video frame images. The images should be frames already exported from the video. To run the program directly, the path format for storing images should be `dataset_path/video_001/00001.jpg、dataset_path/video_001/00002.jpg`, and another model file [shape_predictor_68_face_landmarks.dat](https://github.com/divertingPan/utility_room/blob/master/shape_predictor_68_face_landmarks.dat) is also required.
 
